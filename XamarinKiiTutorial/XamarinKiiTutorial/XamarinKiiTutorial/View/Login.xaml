@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinKiiTutorial.Login">
+
+  <ContentPage.Content>
+
+    <StackLayout
+      Orientation="Vertical"
+      Padding="40,40,40,0"
+      Spacing="20">
+
+      <Label
+        Text ="Sign up or Login to TutorialApp" 
+        HorizontalOptions="Center">
+      </Label>
+
+      <Entry
+        x:Name="_UserName"
+        Text=""
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"
+        Placeholder="Enter Your Username(3-64 length)">
+      </Entry>
+
+      <Entry
+        x:Name="_Password"
+        Text=""
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="Center"
+        IsPassword="True"
+        Placeholder="Enter your Password(4-50 length)">
+      </Entry>
+
+      <StackLayout
+        Orientation="Horizontal"
+        Spacing="20">
+
+        <Button
+          x:Name="_Login"
+          Text="Log In"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="Center">
+        </Button>
+
+        <Button
+          x:Name="_Regist"
+          Text="Sign Up"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="Center">
+        </Button>
+
+      </StackLayout>
+
+    </StackLayout>
+    
+  </ContentPage.Content>
+</ContentPage>
